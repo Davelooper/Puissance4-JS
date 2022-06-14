@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="power4.js" type="text/javascript" defer></script>
+    <link href="style.css" rel="stylesheet">
+    <title>Power 4</title>
+</head>
+<body>
+    <h1 class="title">Puissance 4</h1>
+    <div class="menu">
+        <div class="submenu">
+            <h2 class="submenu__title">Menu Principal</h2>
+            <img class="submenu__image" src="puissance4.png" alt="">
+            <div class="selectplayers">
+                <h3 class="selectplayers__label">Selection des joueurs</h3>
+                <div class="selectplayers__inputs">
+                    <div class="selectplayers__wrapper">
+                        <p for="p1">Joueur 1 : </p>
+                        <select name="p1" id="" class="selectplayers__select selectplayers__select--1">
+                            <option value="red" class="player1__option player1__option--red" selected>Rouge</option>
+                            <option value="green" class="player1__option player1__option--green">Vert</option>
+                            <option value="purple" class="player1__option player1__option--purple">Violet</option>
+                        </select>
+                    </div>
+                    <div class="selectplayers__wrapper">
+                        <p for="p1">Joueur 2 : </p>
+                        <select name="p1" id="p2" class="selectplayers__select selectplayers__select--2" required>
+                            <option value="yellow" class="player2__option player2__option--yellow" selected>Jaune</option>
+                            <option value="green" class="player2__option player2__option--green">Vert</option>
+                            <option value="purple" class="player2__option player2__option--purple">Violet</option>
+                        </select>
+                    </div>
+                    <div class="selectplayers__wrapper">
+                        <p for="p1">Joueur 3 : </p>
+                        <select name="p1" id="p3" class="selectplayers__select selectplayers__select--3">
+                            <option value="" class="player3__option player3__option--default">Choisissez une couleur</option>
+                            <option value="green" class="player3__option player3__option--green">Vert</option>
+                            <option value="purple" class="player3__option player3__option--purple">Violet</option>
+                        </select>
+                    </div>
+                    <div class="selectplayers__wrapper">
+                        <p for="p1">Joueur 4 : </p>
+                        <select name="p1" id="p4" class="selectplayers__select selectplayers__select--4">
+                            <option value="" class="player4__option player4__option--default">Choisissez une couleur</option>
+                            <option value="green" class="player4__option player4__option--green">Vert</option>
+                            <option value="purple" class="player4__option player4__option--purple">Violet</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="selectgrid">
+                <h3 class="selectgrid__title">Taille de la grille</h3>
+                <p for="row" class="selectgrid__rowlabel" >Nombres de lignes</p>
+                <input type="number" id="row" min="6" max="30" value="6" required>
+                <p for="column" class="selectgrid__rowlabel">Nombres de colonnes</p>
+                <input type="number" id="column" min="7" max="30" value="7" required>
+            </div>
+
+            <button class="menu__play">Jouer</button>
+
+        </div>
+    </div>
+    <div class="game">
+
+    </div>
+</body>
+</html>
